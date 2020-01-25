@@ -1,0 +1,33 @@
+$blue: #2B11EB;
+$navy: #1C6BDE;
+
+*, *::after, *::before {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background-color: $blue;
+    color: white;
+}
+  
+.wrapper {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+input {
+    background-color: black;
+}
+
+
+#fact {
+    display: none;
+}
