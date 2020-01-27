@@ -1,33 +1,85 @@
-$blue: #2B11EB;
-$navy: #1C6BDE;
+@import url("https://use.typekit.net/mft8ceh.css");
+
+$black: #171815;
+$turq: #33FDB5;
 
 *, *::after, *::before {
     margin: 0; padding: 0; box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
 body {
-    font-family: sans-serif;
-    background-color: $blue;
-    color: white;
+    font-family: 'gitan-latin', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 18px;
+
+    background-color: $black;
+    color: $turq;
 }
-  
+h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: $turq;
+}
 .wrapper {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 100%;
+    width: 75%;
+    margin: auto;
 }
 
-input {
-    background-color: black;
+.header {
+    margin: 3em auto;
+    .avoidWrap {
+        display: inline-block;
+    }
+    .header--gh {
+        display: none;
+    }
 }
 
-
+.number {
+    margin-top: 100px;
+    input[type=number]{
+        width: 100%;
+        font-family: 'sabbath-black', serif;
+        font-weight: 800;
+        font-size: 200px;
+        text-align: center;
+        color: $turq;
+        background: transparent;
+        border: none;
+    }
+    p {
+        margin-top: 2em;
+    }
+}
 #fact {
     display: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -20px;
+    .footer--link {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $turq;
+        border-radius: 100px;
+        
+        vertical-align: middle;
+        line-height: 40px;
+        margin: 0 5px;
+        cursor: pointer;
+        background-color: $black;
+        &:hover {
+            background-color: $turq;
+            color: $black;
+        }
+    }
 }
