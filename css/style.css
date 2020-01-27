@@ -45,6 +45,7 @@ a {
 
 .number {
   margin-top: 100px;
+  height: 500px;
 }
 
 .number input[type=number] {
@@ -53,6 +54,7 @@ a {
   font-weight: 800;
   font-size: 200px;
   text-align: center;
+  outline: none;
   color: #33FDB5;
   background: transparent;
   border: none;
@@ -67,22 +69,18 @@ a {
 }
 
 footer {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -20px;
+  margin-top: 50px;
 }
 
 footer .footer--link {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border: 1px solid #33FDB5;
-  border-radius: 100px;
   vertical-align: middle;
-  line-height: 40px;
-  margin: 0 5px;
+  line-height: 36px;
   cursor: pointer;
+  border-radius: 100px;
+  border: 1px solid #33FDB5;
   background-color: #171815;
 }
 
